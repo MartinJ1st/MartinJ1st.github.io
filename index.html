@@ -4,8 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin`s page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
-    <h1>Martin123</h1>
+    <nav id="desktop-nav">
+        <a href="#" class="logo">Martin Janev</a>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Martin Janev</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMnu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/MartinJanev.png" alt="Martin Janev Profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Martin Janev</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='./#home'">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/martin-janev1/'">
+                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/MartinJanev'">
+                <img src="./assets/facebook.png" alt="Facebook" class="icon" onclick="location.href='https://www.facebook.com/martin.furka04'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/About-Me.png" alt="About Me" class="about">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience" class="icon">
+                        <h3>Experience</h3>
+                        <p> In the process of<br> obtaining experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education" class="icon">
+                        <h3>Education</h3>
+                        <p> Currently 1st year on<br>Bachelors Degree in CS</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>In my journey through styding Computer Science, I've cultivated a strong attention to detail and a passion for exploring new ideas. I strive to deliver quality results with each project I undertake, constantly challenging myself to exceed expectations. While I may not always feel completely confident, I am dedicated to continuous improvement and making valuable contributions to my field.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#hobbies'">
+    </section>
+
+    
+    <section id="hobbies">
+        <h1 class="title">Hobbies</h1>
+        <div class="about-containers">
+            <div class="details-container">
+                <img src="./assets/scout.png" alt="Scouting" class="icon">
+                <h3>Scouting</h3>
+                <p> 5+ years <br> Participating in Boy Scouts instills valuable life skills such as leadership, teamwork, and outdoor survival techni-<br>ques, fostering personal growth and self-reliance. Through scouting activities, individuals develop a sense of responsibility, confidence, and resilience, preparing them to navigate challenges and succeed in various aspects of life. Personally
+                    I`ve been a scout for over 5 years and it is one of the greatest experiences anyone can have. Definitely would recommend it to anyone.  
+                </p>
+            </div>
+            <div class="details-container">
+                <img src="./assets/ball.png" alt="Experience" class="icon">
+                <h3>Sports</h3>
+                <p><br>Sports play a crucial role in maintaining physical and mental well-being. Engaging in sports activities helps improve cardiovascular health, build strength and endurance, and enhance overall fitness. Additionally, sports promote teamwork, discipline, and perseverance, teaching valuable life skills that can be applied in various aspects of life. Personally, I have played tennis professionally for 10 years, which has taught me the importance of dedication, hard work, and resilience. I have also enjoyed playing basketball, ping pong, and participating in races, which have provided me with opportunities for social interaction, personal growth, and a sense of accomplishment.</p>
+            </div>
+            <div class="details-container">
+                <img src="./assets/student.png" alt="Experience" class="icon">
+                <h3>Student organizations</h3>
+                <p><br>Student organizations provide a platform for students to develop leadership skills, build networks, and gain practical experience outside of the classroom. They offer opportunities for personal growth, collaboration, and the chance to make a positive impact on campus and in the community. By joining student organizations, students can enhance their resumes, expand their knowledge, and create lasting friendships with like-minded individuals. I've been in a student organization called EESTEC LC Skopje, that taught me a lot about soft skills, hard skills, communication skills, negotiations with companies,.. Check out their website: <a id="eestec" href="https://eestec.mk">EESTEC</a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footerText">
+            <p>Copyright &#169; 2024 Martin Janev | All rights under <a href="https://memgraph.com/blog/what-is-mit-license">MIT License</a> reserved</p>        
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+    <script src="script.js"></script>
 </body>
 </html>
