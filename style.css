@@ -189,8 +189,6 @@ section{
 }
 
 .text-container p{
-    padding-left: 10%;
-    width: 80%;
     font-size: 1rem;
     text-align: left;
 }
@@ -415,12 +413,25 @@ article .icon{
 
 
 footer{
+    display: block;
     height: 5vh;
     margin: 0 2rem;
 }
 
 footer p{
     text-align: center;
+}
+
+#MIT a{
+    font-weight: 600;
+    background: #3dca00;
+    color: white;
+}
+
+#MIT a:hover{
+    background:#F2FDEB;
+    color: #3dca00;
+    transition: all 0.3s ease;
 }
 
 #myBtn {
@@ -430,7 +441,6 @@ footer p{
     float: right;
     right: 30px;
     bottom: 30px;
-    right: 30px;
     z-index: 99;
     outline: none;
     background-color: #3dca00;
