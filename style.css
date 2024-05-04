@@ -140,9 +140,7 @@ nav, .nav-links{
     opacity: 1;
 }
 
-
 section{
-    padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -174,7 +172,6 @@ section{
 
 .section__text p{
     font-size: 1.5rem;
-    font-weight: 600;
 }
 
 .section__text__p1{
@@ -191,10 +188,17 @@ section{
     text-align: center;
 }
 
+.text-container p{
+    padding-left: 10%;
+    width: 80%;
+    font-size: 1rem;
+    text-align: left;
+}
+
 #socials-container{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     gap: 1rem;
 }
 
@@ -211,45 +215,49 @@ section{
 .btn, #myBtn{
     font-weight: 600;
     transition: all 0.3s ease;
+    margin-top: 1rem;
     padding: 1rem;
     border-radius: 2rem;
 }
 .btn{
-    width: 8rem;
+    width: 9rem;
 }
 
-.btn-color-1,.btn-color-2{
+.btn-color-1{
     border: #3dca00 0.17rem solid;
 }
 
-.btn-color-1:hover,.btn-color-2:hover{
+.btn-color-1:hover{
     cursor: pointer;
 }
 
-.btn-color-1:hover,.btn-color-2:hover{
+.btn-color-1:hover{
     background: none;
     color: black;
 }
 
-.btn-color-2, .btn-color-1{
+.btn-color-1{
     background:#3dca00;
     color: white;
-}
-
-.btn-color-2:hover{
-    border: rgb(255,255,255), 0.1rem solid;
 }
 
 .btn-container{
     gap: 1rem;
 }
 
-#about{
+#about, #experience, #projects,#contact{
     position: relative;
+    height: 75vh;
+    margin-bottom: 10vh;
+}
+
+#hobbies{
+    position: relative;
+    height: 80vh;
 }
 
 .about-containers{
-    gap: 2rem;
+    gap: 1rem;
     margin: 2rem 0;
 }
 
@@ -268,22 +276,29 @@ section{
 
 .arrow{
     position: absolute;
-    right: -1rem;
-    bottom: 7rem;
+    right: -7rem;
+    bottom: 20rem;
+}
+
+#ar2{
+    bottom: 12rem;
+}
+
+#ar3{
+    bottom: 7.5rem;
 }
 
 .details-container{
-    padding: 1.5rem;
+    padding: 2rem;
     flex:1;
     background: white;
     border-radius: 2rem;
-    border: #3dca00 0.2rem solid;
+    border: #3dca00 0.3rem solid;
     text-align: center;
 }
 
 .section-container{
     gap:4rem;
-    height: 80%;
 }
 
 .section__pic-container{
@@ -291,8 +306,6 @@ section{
     width: 400px;
     margin: auto 0;
 }
-
-
 
 #eestec{
     color: #e52a30 !important;
@@ -304,8 +317,105 @@ section{
     transition: all 0.1s ease;
 }
 
+#projects{
+    height: 80vh;
+}
+
+.experience-sub-title{
+    color: #000;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+
+.color-container{
+    border-color: #3dca00;
+    background-color: rgb(250,250,250);
+}
+
+.project-img{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.project-title{
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn{
+    margin-top:2rem;
+    color: white;
+    border-color: #3dca00;
+}
+
+#contact{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #3dca00 0.3rem solid;
+    border-color: #3dca00;
+    background-color: rgb(250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+}
+
+.email-icon{
+    height: 2.5rem  ;
+}
+
 
 footer{
+    height: 5vh;
     margin: 0 2rem;
 }
 
