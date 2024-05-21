@@ -155,7 +155,6 @@ section{
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
 }
 
 .section__pic-container{
@@ -163,11 +162,29 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+    transition: all 0.3s ease;
+}
+
+.section__pic-container:hover{
+   transform: scale(1.05);
+   transition: all 0.3s ease; 
+}
+
+.article-container img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 
 .section__text{
     align-self: center;
     text-align: center;
+    padding: 0 2rem;
+}
+
+.who_am_i{
+    text-align: justify;
+    font-weight: 300;
+    padding: 0 3rem;
 }
 
 .section__text p{
@@ -179,6 +196,7 @@ section{
 }
 
 .section__text__p2{
+    text-align: center;
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -213,7 +231,7 @@ section{
 .btn, #myBtn{
     font-weight: 600;
     transition: all 0.3s ease;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -243,19 +261,17 @@ section{
     gap: 1rem;
 }
 
-#about, #experience, #projects,#contact{
-    position: relative;
+#profile,#about, #experience, #projects,#contact{
     height: 75vh;
     margin-bottom: 10vh;
 }
 
 #hobbies{
-    position: relative;
-    height: 80vh;
+   height: 70vh;
 }
 
 .about-containers{
-    gap: 1rem;
+    gap: 2rem;
     margin: 2rem 0;
 }
 
@@ -270,20 +286,6 @@ section{
 
 .about-pic{
     border-radius: 2rem;;
-}
-
-.arrow{
-    position: absolute;
-    right: -7rem;
-    bottom: 20rem;
-}
-
-#ar2{
-    bottom: 12rem;
-}
-
-#ar3{
-    bottom: 7.5rem;
 }
 
 .details-container{
@@ -323,7 +325,7 @@ section{
     color: #000;
     font-weight: 600;
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .experience-details-container{
@@ -337,13 +339,13 @@ section{
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+    gap: 1.5rem;
+    justify-content: space-evenly;
 }
 
 article{
     display: flex;
-    width: 10rem;
+    width: 70%;
     gap: 0.5rem;
 }
 
@@ -374,7 +376,7 @@ article .icon{
 }
 
 #contact{
-    height: 70vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
