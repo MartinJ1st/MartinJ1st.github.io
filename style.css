@@ -531,10 +531,10 @@ input:focus,textarea:focus{
 }
 .submit{
     font-family: 'Poppins', sans-serif;
-    width: 10rem;
-    height: 5rem;
+    width: 14rem;
+    height: 4rem;
     border-radius: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background:#3dca00;
     color: white;
     border: #3dca00 0.17rem solid;
