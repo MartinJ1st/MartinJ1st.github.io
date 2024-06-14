@@ -36,7 +36,7 @@ a:hover, .menu-links a:hover{
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 12vh;
 }
 
 .logo{
@@ -53,6 +53,11 @@ a,.btn{
     transition: all 0.3s ease;
 }
 
+nav a{
+    color: black;
+    font-size: 1.2rem;
+}
+
 nav, .nav-links{
     display:flex;
 }
@@ -66,6 +71,10 @@ nav, .nav-links{
 
 #hamburger-nav{
     display: none;
+}
+
+#hamburger-nav{
+    color: black;
 }
 
 .hamburger-menu{
@@ -85,7 +94,7 @@ nav, .nav-links{
 .hamburger-icon span{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3s ease-in-out;
 }
 
@@ -140,9 +149,12 @@ nav, .nav-links{
     opacity: 1;
 }
 
+#desktop-nav > a{
+    padding: 2rem 1rem;
+}
+
 section{
-    height: 96vh;
-    margin: 0 10rem;
+    padding: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -155,6 +167,9 @@ section{
     display: flex;
     justify-content: center;
     gap: 5rem;
+}
+#profile .title, #profile .section__text__p2{
+    margin: 0;
 }
 
 .section__pic-container{
@@ -183,8 +198,10 @@ section{
 
 .who_am_i{
     text-align: justify;
+    font-size: 1.1rem;
     font-weight: 300;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
+    margin: 0.3rem 0;
 }
 
 .section__text p{
@@ -202,8 +219,9 @@ section{
 }
 
 .title{
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
+    margin-bottom: 0.6rem;
 }
 
 .text-container p{
@@ -218,11 +236,20 @@ section{
     gap: 1rem;
 }
 
-.icon{
-    cursor: pointer;
-    height: 2rem;
+#socials-container a:hover{
+    transform: scale(1.25);
+    transition: all 0.5s ease-in-out;
+
 }
 
+.icon{
+    height: 2rem;
+    width: min-content;
+}
+#socials-container .icon{
+    cursor: pointer;
+
+}
 .btn-container{
     display: flex;
     justify-content: center;
@@ -231,18 +258,12 @@ section{
 .btn, #myBtn{
     font-weight: 600;
     transition: all 0.3s ease;
-    margin-top: 1.2rem;
     padding: 1rem;
     border-radius: 2rem;
 }
 .btn{
     width: 9rem;
 }
-
-.btn-color-1{
-    border: #3dca00 0.17rem solid;
-}
-
 .btn-color-1:hover{
     cursor: pointer;
 }
@@ -255,7 +276,10 @@ section{
 .btn-color-1{
     background:#3dca00;
     color: white;
+    border: #3dca00 0.17rem solid;
 }
+
+
 
 .btn-container{
     gap: 1rem;
@@ -265,14 +289,22 @@ section{
     height: 75vh;
     margin-bottom: 10vh;
 }
-
-#hobbies{
-   height: 70vh;
+#projects{
+    height: 150vh;
 }
 
 .about-containers{
-    gap: 2rem;
-    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+
+#hobbies{
+   height: 85vh;
+}
+
+.about-containers{
+    gap: 1.1rem;
+    margin: 0.55rem;
 }
 
 .about-details-container{
@@ -287,7 +319,6 @@ section{
 .about-pic{
     border-radius: 2rem;;
 }
-
 .details-container{
     padding: 2rem;
     flex:1;
@@ -296,6 +327,39 @@ section{
     border: #3dca00 0.3rem solid;
     text-align: center;
 }
+
+#about .details-container{
+    padding: 1.5rem;
+}
+
+#projects .details-container{
+    display: flex;
+    padding: 2rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: #3dca00 0.3rem solid;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#hobbies .details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: #3dca00 0.3rem solid;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
 
 .section-container{
     gap:4rem;
@@ -309,6 +373,29 @@ section{
 
 #eestec{
     color: #e52a30 !important;
+    font-weight: 600;
+
+}
+
+#marathon{
+    color: #001f75 !important;
+    font-weight: 600;
+}
+
+#marathon:hover{
+    color: #3dca00 !important;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+#webDesign{
+    color: #3dca00 !important;
+}
+
+#webDesign:hover{
+    color: #3dca00 !important;
+    text-decoration: none;
+    transition: all 0.1s ease;
 }
 
 
@@ -317,8 +404,15 @@ section{
     transition: all 0.1s ease;
 }
 
-#projects{
-    height: 80vh;
+#izvidnik{
+    color: #3dca00 !important;
+    font-weight: 600;
+}
+
+
+#izvidnik:hover{
+    transition: all 0.1s ease;
+    color: #3dca00 !important;
 }
 
 .experience-sub-title{
@@ -338,14 +432,14 @@ section{
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1.5rem;
-    justify-content: space-evenly;
+    gap: 1rem;
+    justify-content: center;
+    align-content: space-between;
 }
 
 article{
     display: flex;
-    width: 70%;
+    width: 25%;
     gap: 0.5rem;
 }
 
@@ -365,7 +459,7 @@ article .icon{
 }
 
 .project-title{
-    margin: 1rem;
+    margin: 1.5rem 0;
     color: black;
 }
 
@@ -375,84 +469,115 @@ article .icon{
     border-color: #3dca00;
 }
 
-#contact{
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.volunteering{
+    justify-content: space-evenly;
 }
 
-.contact-info-upper-container{
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: #3dca00 0.3rem solid;
-    border-color: #3dca00;
-    background-color: rgb(250,250,250);
-    margin: 2rem auto;
-    padding: 0.5rem;
+.volunteering article{
+    width: 65%;
 }
+
+#contact{
+    height: 70vh;
+}
+
+#contact > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20rem;
+}
+
 
 .contact-info-container{
+    align-self: center;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
 }
 
-.contact-info-container p{
-    font-size: larger;
+.input-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
-.contact-icon{
-    cursor: default;
+input,textarea {
+    width: 44.5%;
+    border: 2px solid #ccc;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: black 0.15rem solid;
+    transition: width 0.6s ease-in-out;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
 }
 
-.email-icon{
-    height: 2.5rem  ;
+textarea{
+    width: 90%;
+}
+
+input:focus,textarea:focus{
+    width: 100%;
+}
+.submit{
+    font-family: 'Poppins', sans-serif;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background:#3dca00;
+    color: white;
+    border: #3dca00 0.17rem solid;
+    margin-top: 1.2rem;
+}
+
+.submit:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
 }
 
 
 footer{
-    display: block;
-    height: 5vh;
-    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3dca00;
+    align-items: center;
+    padding: 1rem 10%;
 }
 
-footer p{
-    text-align: center;
-}
-
-#MIT a{
-    font-weight: 600;
-    background: #3dca00;
+.footerText p{
     color: white;
+    font-size: 1.1rem;
 }
 
-#MIT a:hover{
-    background:#F2FDEB;
-    color: #3dca00;
-    transition: all 0.3s ease;
-}
+
 
 #myBtn {
     display: flex;
     flex-direction: row-reverse;
     position: relative; 
     float: right;
-    right: 30px;
-    bottom: 30px;
     z-index: 99;
     outline: none;
-    background-color: #3dca00;
-    border: #3dca00 0.17rem solid;
-    color: white;
+    background-color: white;
+    border: white 0.17rem solid;
+    color: #3dca00;
     cursor: pointer;
     font-size: 15px;
+    margin: 0;
 }
 
   #myBtn:hover {
-    background: none;
-    color: black;  
+    transform: scale(0.95);
+    transition: all 0.5s ease-in-out;
 }

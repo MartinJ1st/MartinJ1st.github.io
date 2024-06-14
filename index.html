@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin`s page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
     <link rel="icon" type="image/x-icon" href="./assets/flag-favicon.png">
 </head>
 <body>
@@ -44,7 +43,7 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/MartinJanev.png" alt="Martin Janev Profile">
+            <img src="./assets/MartinJanev.jpg" alt="Martin Janev Profile">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -57,11 +56,13 @@
                 <button class="btn btn-color-1" onclick="location.href='./#home'">Download CV</button>
             </div>
 
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/martin-janev1/'">
-                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/MartinJanev'">
-                <img src="./assets/facebook.png" alt="Facebook" class="icon" onclick="location.href='https://www.facebook.com/martin.furka04'">
-                <img src="./assets/instagram.png" alt="Instagram" class="icon" onclick="location.href='https://www.instagram.com/mjanev1/'">
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/martin-janev1/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn" class="icon"></a>
+                    <a href="https://github.com/MartinJanev" target="_blank"><img src="./assets/github.png" alt="GitHub" class="icon"></a>
+                    <a href="https://www.facebook.com/martin.furka04" target="_blank"><img src="./assets/facebook.png" alt="Facebook" class="icon"></a>
+                    <a href="https://www.instagram.com/mjanev1/" target="_blank"><img src="./assets/instagram.png" alt="Instagram" class="icon"></a>
+                    <a href="https://leetcode.com/u/user5945GR/" target="_blank"><img src="./assets/leetcode.jpg" alt="Lettcode" class="icon"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -69,7 +70,7 @@
     <section id="about">
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/About-Me.png" alt="About Me" class="about-pic">
+                <img src="./assets/About-Me.jpg" alt="About Me" class="about-pic">
             </div>
             <div class="about-details-container">
                 <h1 class="title">About Me</h1>
@@ -85,7 +86,12 @@
                     <div class="details-container">
                         <img src="./assets/education.png" alt="education" class="icon">
                         <h3>Education</h3>
-                        <p> Currently 1st year on Bachelors Degree in CS</p>
+                        <p>1st year on Bachelors Degree in CS</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/active.png" alt="activity" class="icon">
+                        <h3>Favourite Activies</h3>
+                        <p>Running and Scouting</p>
                     </div>
                 </div>
 
@@ -102,115 +108,67 @@
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>C++</h3>
-                                <p>Advanced</p>
-                            </div>
+                            <h3>C++</h3>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Intermediate</p>
-                            </div>
+                            <h3>HTML</h3>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
+                            <h3>CSS</h3>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
+                            <h3>JavaScript</h3>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Git / GitHub</h3>
-                                <p>Intermediate</p>
-                            </div>
+                            <h3>Java</h3>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">EESTEC</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>EA - Robotics</h3>
-                                <p>Head of Logistics</p>
-                            </div>
+                            <h3>Python</h3>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>EA - DevOps</h3>
-                                <p>Participant</p>
-                            </div>
+                            <h3>Unity</h3>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>EESTEC B2B</h3>
-                                <p>Volunteer</p>
-                            </div>
+                            <h3>C#</h3>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>EESTEC SSA</h3>
-                                <p>100% Completion</p>
-                            </div>
+                            <h3>.NET</h3>
                         </article>
                         
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Scouting</h2>
-                    <div class="article-container">
+                    <h2 class="experience-sub-title">Volunteering</h2>
+                    <div class="article-container volunteering">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <div>
-                                <h3>DION</h3>
-                                <p>3rd Place</p>
+                                <h3>Scouting</h3>
                             </div>
-                        </article>
+                        </article>                       
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <div>
-                                <h3>School Leadership Training</h3>
-                                <p>Completed</p>
+                                <h3>EESTEC LC Skopje</h3>
                             </div>
-                        </article>
+                        </article>                       
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <div>
-                                <h3>Academy for Activism and Volunteerism</h3>
-                                <p>Completed</p>
+                                <h3>Radioamateur Society of Macedonia</h3>
                             </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>School of Orientation and Topography</h3>
-                                <p>Completed</p>
-                            </div>
-                        </article>
+                        </article>                       
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -219,37 +177,69 @@
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/tetris.jpg" alt="Tetris Project" class="project-img">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/tetris.jpg" alt="Tetris Project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Tetris Project</h2>
+                    <p>This is my high school matura project for the subject Informatics - a digital product, that is a personal interpretation of the classic game from the eighties: "Tetris", with it made entirely in Unity.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/MartinJanev/tetris-project'">GitHub</button>
+                    </div>
                 </div>
-                <h2 class="experience-sub-title project-title">Tetris Project</h2>
-                <p>This is my high school matura project for the subject Informatics - a digital product, that is a personal interpretation of the classic game from the eighties: "Tetris", with it made entirely in Unity.</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/MartinJanev/tetris-project'">GitHub</button>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Event Management System</h2>
+                    <p>This project is project for the subject <a href="https://www.finki.ukim.mk/subject/F23L1S146" id="webDesign">Fundamentals of Web Design</a>. The project is about a system to create and manage events, including RSVP functionality.<br> Technologies used: TBD</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
+                    </div>
                 </div>
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/working.png" alt="Tetris Project" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est aliquam accusamus, adipisci similique at voluptatibus, quo aliquid veritatis veniam sunt maxime nemo laudantium eum sequi qui optio dolores.</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
+                    </div>
+                </div>                
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
+                    </div>
+                </div>                
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
+                    </div>
                 </div>
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/working.png" alt="Tetris Project" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     
@@ -260,42 +250,47 @@
                 <img src="./assets/scout.png" alt="Scouting" class="icon">
                 <h3>Scouting</h3>
                 <p>I've been a scout for over five years and highly recommend it as a valuable experience. Joining Boy Scouts teaches leadership, teamwork, and outdoor survival, fostering personal growth and self-reliance. Scouting builds responsibility, confidence, and resilience, preparing individuals for life's challenges.</p>
+                <p>Check out the Scout Association's website <a href="https://izvidnici.mk/" id="izvidnik">HERE</a></p>
             </div>
             <div class="details-container">
                 <img src="./assets/ball.png" alt="Experience" class="icon">
                 <h3>Sports</h3>
-                <p>Sports are vital for physical and mental well-being, improving cardiovascular health, strength, endurance, and overall fitness. They promote teamwork, discipline, and perseverance, teaching life skills applicable in many areas. Playing tennis professionally for 10 years taught me dedication, hard work, and resilience. Additionally, playing basketball, ping pong, and racing provided social interaction, personal growth, and a sense of accomplishment.</p>
+                <p>Sports are vital for physical and mental well-being, improving cardiovascular health, strength, endurance, and overall fitness. I`ve played tennis professionaly for 10 years, but still find time to play some basketball, ping pong, football,...</p>
+                <p>Recently I started preparing for the <a href="http://skopskimaraton.com.mk/" id="marathon">Wizz Air Skopje Half-Marathon</a> in October which is a goal I want to achieve.</p>
             </div>
             <div class="details-container">
                 <img src="./assets/student.png" alt="Experience" class="icon">
                 <h3>Student organizations</h3>
-                <p>Student organizations help students develop leadership skills, build networks, and gain practical experience beyond the classroom. Joining these groups enhances resumes, expands knowledge, and creates lasting friendships. My experience with EESTEC LC Skopje taught me valuable soft, hard, and communication skills, including negotiating with companies. Check out their website: <a id="eestec" href="https://eestec.mk">EESTEC</a></p>
+                <p>Student organizations help students develop leadership skills, build networks, and gain practical experience beyond the classroom. Joining these groups enhances resumes, expands knowledge, and creates lasting friendships. My experience with EESTEC LC Skopje taught me valuable soft skills, hard skills, and communication skills, including negotiating with companies.</p>
+                <p>Check out their website: <a id="eestec" href="https://eestec.mk">HERE</a></p>
             </div>
         </div>
     </section>
 
 
-    <section id="contact">
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon">
-            <p><a href="mailto:janev.martin123@gmail.com">E-Mail</a></p>
-            </div>  
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon">
-            <p><a href="https://www.linkedin.com/in/martin-janev1/">LinkedIn</a></p>
-            </div>  
+    <section class="contact" id="contact">
+        <div>
+            <h1 class="title">Contact <span>Me!</span></h2>
+    
+            <form class="contact-info-container">
+            <div class="input-box">
+                <input type="text" id="Name" placeholder="Full Name">
+                <input type="email" id="Email" placeholder="Email Address">
+            </div>
+            <textarea name="" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-color-1 submit" onclick="send()">Send Message</button>
+            </form>
         </div>
     </section>
     
-
-    <footer>
+    <footer class="footer">
         <div class="footerText">
             <p>Copyright &#169; 2024 Martin Janev<p>        
         </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
-    </footer>
+        <div class="footer-iconTop">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+        </div>
+      </footer>
     <script src="script.js"></script>
 </body>
 </html>
