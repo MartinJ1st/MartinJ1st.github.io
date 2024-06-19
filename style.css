@@ -53,7 +53,6 @@ a,.btn{
 
 nav a{
     color: black;
-    font-size: 1.2rem;
 }
 
 nav, .nav-links{
@@ -377,8 +376,12 @@ article .icon{
     margin-top: 1rem;
 }
 
+#books .about-containers{
+    width: 90%;
+}
+
 #books .about-containers >div{
-    width: 45%;
+    width: 50%;
 }
 
 #books .section__text__p1{
@@ -402,6 +405,7 @@ article .icon{
 
 #contact{
     height: 70vh;
+    margin-bottom: 0;
 }
 
 #contact > div{
@@ -549,4 +553,26 @@ footer{
 .submit:hover{
     transform: scale(1.05);
     transition: all 0.5s ease-in-out;
+}
+
+  
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + #profile, #profile + #about, #about + #experience {
+    padding-top: 230px;
+}
+
+
+.glue a {
+    color: white;
+}
+
+.sticky a:hover{
+    color: black;
+    text-decoration-color: black;
+    transition: all 0.3s ease;
 }
