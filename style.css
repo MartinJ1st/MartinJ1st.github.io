@@ -562,10 +562,20 @@ footer{
     width: 100%;
 }
   
-.sticky + #profile, #profile + #about, #about + #experience {
+.sticky + #profile, 
+#profile + #about, 
+#about + #experience, 
+#experience + #projects, 
+#projects + #hobbies, 
+#hobbies + #books,
+#books + #contact
+{   
     padding-top: 230px;
 }
 
+#contact + footer{
+    margin-top: 230px;
+}
 
 .glue a {
     color: white;
