@@ -14,7 +14,7 @@
 <body>
     <nav id="desktop-nav">
         <a href="#" class="logo">Martin Janev</a>
-        <div>
+        <div class="menu" id="menu">
             <ul class="nav-links">
                 <li><a href="#profile">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -25,6 +25,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     </nav>
 
     <section id="profile">
@@ -92,39 +98,30 @@
                     <h2 class="experience-sub-title">IT</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>C++</h3>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>HTML</h3>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>CSS</h3>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>JavaScript</h3>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>Angular</h3>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>TypeScript</h3>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>Java</h3>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>C#</h3>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <h3>Python</h3>
                         </article>
                     </div>
@@ -133,29 +130,20 @@
                     <h2 class="experience-sub-title">Volunteering</h2>
                     <div class="article-container volunteering">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Scout Unit "Equinox" Shtip</h3>
-                            </div>
-                        </article>                       
+                            <h3>Scout Unit "Equinox" Shtip</h3>
+                        </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Scout Association of Macedonia</h3>
-                            </div>
-                        </article>                       
+                            <h3>Scout Association of Macedonia</h3>
+                        </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>EESTEC LC Skopje</h3>
-                            </div>
-                        </article>                      
+                            <h3>EESTEC LC Skopje</h3>
+                        </article>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+    
 
     <section id="projects">
         <h1 class="title">Projects</h1>
@@ -258,21 +246,24 @@
     </section>
 
     <section id="books">
+        <h1 class="title">Books</h1>
         <div class="about-containers">
             <div class="details-container">
-                <h1 class="section__text__p2">Book I am reading right now</h1>
+                <h2 class="section__text__p2">Book I am reading right now</h2>
                 <img src="assets/algo.jpg" class="book-img">
                 <button href="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299" class="btn btn-color-1">Amazon Link</button>
             </div>
             <div class="section__text__p1">
-            <blockquote cite="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299"><h3>Introduction to Algorithms, Fourth Edition</h3>
-                <p>A comprehensive update of the leading algorithms text, with new material on matchings in bipartite graphs, online algorithms, machine learning, and other topics.<br><br>
-                    Some books on algorithms are rigorous but incomplete; others cover masses of material but lack rigor. Introduction to Algorithms uniquely combines rigor and comprehensiveness. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers, with self-contained chapters and algorithms in pseudocode. Since the publication of the first edition, Introduction to Algorithms has become the leading algorithms text in universities worldwide as well as the standard reference for professionals. This fourth edition has been updated throughout. <br><br>
-                    Personally, this is the book for surviving the Algorithms and Data Structures class I will take on next semestar.</p>
-            </blockquote>
+                <blockquote cite="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299">
+                    <h3>Introduction to Algorithms, Fourth Edition</h3>
+                    <p>A comprehensive update of the leading algorithms text, with new material on matchings in bipartite graphs, online algorithms, machine learning, and other topics.<br><br>
+                        Some books on algorithms are rigorous but incomplete; others cover masses of material but lack rigor. Introduction to Algorithms uniquely combines rigor and comprehensiveness. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers, with self-contained chapters and algorithms in pseudocode. Since the publication of the first edition, Introduction to Algorithms has become the leading algorithms text in universities worldwide as well as the standard reference for professionals. This fourth edition has been updated throughout. <br><br>
+                        Personally, this is the book for surviving the Algorithms and Data Structures class I will take on next semester.
+                    </p>
+                </blockquote>
             </div>
         </div>
-    </section></div></section>
+    </section>
 
     <section class="contact" id="contact">
         <div>
