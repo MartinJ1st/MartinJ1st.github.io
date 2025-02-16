@@ -74,10 +74,6 @@ nav {
     display: flex;
 }
 
-.menu.active {
-    display: block;
-}
-
 nav a {
     color: black;
 }
@@ -89,8 +85,20 @@ nav a {
     font-size: 1.2rem;
 }
 
-#desktop-nav > a {
-    padding: 1.5rem 1rem;
+/* When screen is small, hide the nav-links unless active */
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #2d8000;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 /* Section Styling */
@@ -104,13 +112,13 @@ section {
     gap: 4rem;
 }
 
-.section__text__p1{
+.section__text__p1 {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0.5rem 0;
 }
 
-.section__text__p2{
+.section__text__p2 {
     font-size: 1.2rem;
     font-weight: 300;
     margin: 0.5rem 0;
@@ -122,7 +130,8 @@ section {
     gap: 8rem;
 }
 
-#profile .title, #profile .section__text__p2 {
+#profile .title,
+#profile .section__text__p2 {
     margin: 0;
 }
 
@@ -157,7 +166,8 @@ section {
     margin: 0.3rem 0;
 }
 
-.section__text__p1, .section__text__p2 {
+.section__text__p1,
+.section__text__p2 {
     text-align: center;
 }
 
@@ -192,18 +202,19 @@ section {
     gap: 1rem;
 }
 
-.btn, #myBtn {
+.btn,
+#myBtn {
     font-weight: 600;
     transition: all 0.3s ease;
-    padding: 1rem 2rem; 
+    padding: 1rem 2rem;
     border-radius: 2rem;
     border: none;
 }
 
 .btn-color-1 {
-    background: #3dca00;
+    background: #2d8000;
     color: white;
-    border: 0.17rem solid #3dca00;
+    border: 0.17rem solid #2d8000;
 }
 
 .btn-color-1:hover {
@@ -217,7 +228,13 @@ section {
 }
 
 /* Section Heights and Margins */
-#profile, #about, #experience, #projects,#hobbies, #books, #contact {
+#profile,
+#about,
+#experience,
+#projects,
+#hobbies,
+#books,
+#contact {
     min-height: 80vh;
     margin-bottom: 15vh;
 }
@@ -233,8 +250,8 @@ section {
     gap: 2rem;
 }
 
-#about .about-containers{
-    gap:1rem;
+#about .about-containers {
+    gap: 1rem;
 }
 
 .about-details-container {
@@ -253,16 +270,16 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: 0.3rem solid #3dca00;
+    border: 0.3rem solid #2d8000;
     text-align: center;
 }
 
-/* Experience Section (Newly Added) */
+/* Experience & Projects Section (Grid Layout) */
 .experience-details-container {
     padding: 0 2rem;
-    display: flex;
-    row-gap: 2rem;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
 }
 
 .experience-sub-title {
@@ -290,11 +307,6 @@ article h3 {
     margin: 0;
 }
 
-/* Volunteer Articles */
-.volunteering article h3 {
-    font-size: 1.1rem;
-}
-
 /* Project Section */
 .project-img {
     border-radius: 1rem;
@@ -313,18 +325,7 @@ article h3 {
 .project-btn {
     margin-top: 2rem;
     color: white;
-    border-color: #3dca00;
-}
-
-/* Volunteering Section */
-.volunteering {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.volunteering article {
-    height: 100%;
+    border-color: #2d8000;
 }
 
 /* Hobbies Section */
@@ -334,16 +335,18 @@ article h3 {
     gap: 1rem;
 }
 
-
+/* Books Section */
 #books .details-container {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
     text-align: center;
 }
 
 #books .section__text__p2 {
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #books .book-img {
@@ -354,11 +357,12 @@ article h3 {
 
 #books .btn {
     display: inline-block;
+    margin: 0 auto;
+    width: 200px;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1em;
 }
-
 
 #books .section__text__p1 {
     flex: 2;
@@ -367,7 +371,7 @@ article h3 {
 
 #books blockquote {
     font-size: 1.1rem;
-    font-style: italic  ;
+    font-style: italic;
     border-left: 5px solid #ccc;
     padding-left: 10px;
     margin: 10px 0;
@@ -377,7 +381,7 @@ article h3 {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #3dca00;
+    background-color: #2d8000;
     align-items: center;
     padding: 1rem 10%;
 }
@@ -388,9 +392,9 @@ footer {
 }
 
 #myBtn {
-    color: #3dca00;
+    color: #2d8000;
     font-weight: 600;
-    border: 0.17rem solid #3dca00;
+    border: 0.17rem solid #2d8000;
 }
 
 #myBtn:hover {
@@ -411,7 +415,7 @@ footer {
     color: white;
 }
 
-.glue .hamburger span{
+.glue .hamburger span {
     background-color: white !important;
 }
 
@@ -420,6 +424,7 @@ footer {
     text-decoration-color: black;
     transition: all 0.3s ease;
 }
+
 #webDesign, #izvidnik, #marathon, #eestec {
     font-weight: 700;
 }
@@ -433,7 +438,7 @@ footer {
 }
 
 #webDesign:hover, #marathon:hover, #izvidnik:hover, #eestec:hover {
-    color: #3dca00;
+    color: #2d8000;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -446,7 +451,7 @@ footer {
     color: purple;
 }
 
-#contact{
+#contact {
     min-height: 70vh;
 }
 
@@ -491,18 +496,23 @@ footer {
     cursor: pointer;
 }
 
-@media (max-width:1400px){
-    #about .about-containers{
+/* Responsiveness */
+@media (max-width:1400px) {
+    #about .about-containers {
         display: flex;
         flex-direction: column;
     }
-
-    #about .section-containe{
+    #about .section-containe {
         gap: 0;
+    }
+    #books .btn {
+        margin: 0;
+    }
+    #books .details-container {
+        height: min-content;
     }
 }
 
-/* Responsiveness */
 @media (max-width: 1200px) {
     section {
         padding: 4rem;
@@ -517,11 +527,10 @@ footer {
     #profile .section__text {
         transform: scale(0.9);
     }
-
-    #projects .experience-details-container, #projects .about-containers{
+    #projects .experience-details-container,
+    #projects .about-containers {
         gap: 0.5rem;
     }
-    
 }
 
 @media (max-width: 1000px) {
@@ -534,61 +543,51 @@ footer {
     }
     .section__pic-container {
         height: 500px;
-
     }
-
-    .section__pic-container{
+    .section__pic-container {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-
-    .about-details-container{
+    .about-details-container {
         padding: 0 3rem;
     }
-
-    .section__pic-container img{
+    .section__pic-container img {
         height: 100%;
     }
     .title {
         font-size: 2.5rem;
         margin: 0.5rem 0;
     }
-    nav{
+    nav {
         padding: 1rem 2rem;
     }
-
     .nav-links a {
         font-size: 1rem;
     }
-
     .nav-links {
         gap: 1rem;
     }
-
-    #hobbies .about-containers, #projects .about-containers {
+    #hobbies .about-containers,
+    #projects .about-containers {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
-
     .project-img {
         height: unset;
     }
-
-    .article-container img:hover{
+    .article-container img:hover {
         transform: scale(0.7);
     }
-
-    #projects .experience-details-container, #hobbies .about-containers{
+    #projects .experience-details-container,
+    #hobbies .about-containers {
         padding: 0 4rem;
     }
-
     #books blockquote {
         font-size: 1rem;
     }
-
-    #profile{
+    #profile {
         flex-direction: column;
     }
 }
@@ -598,31 +597,29 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        background-color: #3dca00;
-        top: 60px;
-        right: 0;
-        width: 100%;
+        background-color: #2d8000;
+        top: 100px;
+        right: 10px;
+        width: auto;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.5rem;
+        z-index: 1000;
+        font-size: 10px;
     }
-
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+        color: white;
+    }
     .nav-links.active {
         display: flex;
     }
-
     .hamburger {
         display: flex;
     }
-
-
-    .nav-links li {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .nav-links a {
-        font-size: 1.5em;
-        color: white;
-    }
-    
     nav {
         flex-direction: row;
         justify-content: space-between;
@@ -630,34 +627,34 @@ footer {
     .section__pic-container {
         height: 400px;
     }
-
     .about-containers {
         flex-direction: column;
         gap: 1rem;
     }
-
-    #profile, #about, #experience, #projects,#hobbies, #books, #contact {
+    #profile,
+    #about,
+    #experience,
+    #projects,
+    #hobbies,
+    #books,
+    #contact {
         margin-bottom: 10vh;
     }
-
-    #experience .about-containers{
+    #experience .about-containers {
         display: flex;
         flex-direction: column;
     }
-
-    #experience .article-container{
+    #experience .article-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-
-    #books{
+    #books {
         padding: 0 4rem;
     }
-    #books .about-containers{
+    #books .about-containers {
         display: flex;
         flex-direction: column;
     }
-
-    .section__text{
+    .section__text {
         padding: 0 1rem;
     }
 }
@@ -669,44 +666,45 @@ footer {
     .section__pic-container {
         height: 350px;
     }
-
-    #projects .experience-details-container, #hobbies .about-containers{
+    #projects .experience-details-container,
+    #hobbies .about-containers {
         padding: 0 2rem;
     }
-
-    .about-details-container, #books{
+    .about-details-container,
+    #books {
         padding: 0 1rem;
     }
-    #books .about-containers{
+    #books .about-containers {
         padding: 0 2rem;
     }
-
-    footer{
+    footer {
         padding: 1rem 5%;
     }
 }
 
-@media (max-width: 500px){
-    section{
+@media (max-width: 500px) {
+    section {
         padding: 0 1rem;
-    };
-
-    .details-container{
+    }
+    .details-container {
         padding: 0.1rem;
     }
-
-    .section__pic-container{
+    .section__pic-container {
         height: 300px;
     }
-
-    #myBtn{
+    #myBtn {
         padding: 0.5rem 1rem;
     }
-
-    .footerText p{
+    .footerText p {
         font-size: 0.9rem;
     }
-    #projects .experience-details-container, #hobbies .about-containers, .experience-details-container, .who_am_i, .about-details-container, #profile .section__text, #books .about-containers{
+    #projects .experience-details-container,
+    #hobbies .about-containers,
+    .experience-details-container,
+    .who_am_i,
+    .about-details-container,
+    #profile .section__text,
+    #books .about-containers {
         padding: 0;
     }
 }

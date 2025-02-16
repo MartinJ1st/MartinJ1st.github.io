@@ -1,293 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Martin Janev's personal website">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Martin Janev's personal website, used for showcasing his work and projects">
-    <meta property="og:image" content="./assets/banner.png">
-    <title>Martin`s personal website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./assets/flag-favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Martin Janev's personal website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Martin Janev's personal website, used for showcasing his work and projects" />
+  <meta property="og:image" content="./assets/banner.png" />
+  <title>Martin Janev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/flag-favicon.png" />
 </head>
 <body>
-    <nav id="desktop-nav">
-        <a href="#" class="logo">Martin Janev</a>
-        <div class="menu" id="menu">
-            <ul class="nav-links">
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#books">Books</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+  <!-- Navigation -->
+  <nav id="desktop-nav">
+    <a href="#" class="logo">Martin Janev</a>
+    <div class="menu" id="menu">
+      <ul class="nav-links"></ul>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-    </nav>
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/MartinJanev.jpg" alt="Martin Janev Profile" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Martin Janev</h1>
+      <p class="section__text__p2">Computer Science Student</p>
+      <div class="text-container">
+        <h3 class="who_am_i">
+          I am an IT enthusiast and dedicated problem solver, driven by a passion for unraveling complex challenges in the realms of artificial intelligence and data science. I prioritize planning and flawless execution in all my endeavors, ensuring that each project is approached with precision and clarity. My method involves developing comprehensive, innovative solutions—transforming complex ideas into efficient, robust code that stands up to rigorous testing and real-world application.
+        </h3>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-1 CV" onclick="location.href='./#home'">Download CV</button>
+      </div>
+      <div id="socials-container"></div>
+    </div>
+  </section>
 
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/MartinJanev.jpg" alt="Martin Janev Profile">
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/About-Me.jpg" alt="About Me" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <h1 class="title">About Me</h1>
+        <div class="text-container">
+          <h3 class="who_am_i">
+            At 20 years old, I am currently in my second year at the Faculty of Computer Science and Engineering, with plans to specialize in Computer Science or AI/ML in the future. My academic journey has given me invaluable experiences that have refined my attention to detail and ignited a passion for exploring innovative ideas. I am committed to delivering high-quality results on every project I undertake.
+          </h3>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Martin Janev</h1>
-            <p class="section__text__p2">Computer Science Student</p>
-            <div class="text-container">
-                <h3 class="who_am_i">I am a curious programmer and problem solver, guided by an interest in unravelling complex challenges, AI and data science. I always ensure (or at least try to) that everything is planned and executed perfectly. I strive to solve any problem with thorough ideas, written via code</h3>
-            </div>
-            <div class="btn-container">
-                <button class="btn btn-color-1 CV" onclick="location.href='./#home'">Download CV</button>
-            </div>
-
-                <div id="socials-container">
-                    <a href="https://www.linkedin.com/in/martin-janev1/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn" class="icon"></a>
-                    <a href="https://github.com/MartinJanev" target="_blank"><img src="./assets/github.png" alt="GitHub" class="icon"></a>
-                    <a href="https://www.facebook.com/martin.furka04" target="_blank"><img src="./assets/facebook.png" alt="Facebook" class="icon"></a>
-                    <a href="https://www.instagram.com/mjanev1/" target="_blank"><img src="./assets/instagram.png" alt="Instagram" class="icon"></a>
-                    <a href="https://leetcode.com/u/user5945GR/" target="_blank"><img src="./assets/leetcode.jpg" alt="Lettcode" class="icon"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/About-Me.jpg" alt="About Me" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <h1 class="title">About Me</h1>
-                <div class="text-container">
-                    <h3 class="who_am_i">I am 20 years old, currently in my second year of studies at the Faculty of Computer Science and Engineering, in the future majoring in Computer Science. My journey through studing the degree has brough some new experiences. Most of all, I`ve learned to give attention to details and have a passion for exploring new ideas. I strive to deliver quality results with each project I undertake.</h3>
-                </div>
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/mission.png" alt="Experience" class="icon">
-                        <h3>Mission</h3>
-                        <p>To make the world a better place</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education" class="icon">
-                        <h3>Education</h3>
-                        <p>2nd year on Bachelors Degree in CS</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/active.png" alt="activity" class="icon">
-                        <h3>Favourite Activies</h3>
-                        <p>Running and Scouting</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">IT</h2>
-                    <div class="article-container">
-                        <article>
-                            <h3>C++</h3>
-                        </article>
-                        <article>
-                            <h3>HTML</h3>
-                        </article>
-                        <article>
-                            <h3>CSS</h3>
-                        </article>
-                        <article>
-                            <h3>JavaScript</h3>
-                        </article>
-                        <article>
-                            <h3>Angular</h3>
-                        </article>
-                        <article>
-                            <h3>TypeScript</h3>
-                        </article>
-                        <article>
-                            <h3>Java</h3>
-                        </article>
-                        <article>
-                            <h3>C#</h3>
-                        </article>
-                        <article>
-                            <h3>Python</h3>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Volunteering</h2>
-                    <div class="article-container volunteering">
-                        <article>
-                            <h3>Scout Unit "Equinox" Shtip</h3>
-                        </article>
-                        <article>
-                            <h3>Scout Association of Macedonia</h3>
-                        </article>
-                        <article>
-                            <h3>EESTEC LC Skopje</h3>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/tetris.jpg" alt="Tetris Project" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Tetris Project</h2>
-                    <p>This is my high school matura project for the subject Informatics - a digital product, that is a personal interpretation of the classic game from the eighties: "Tetris".<br> Technologies used: C# in Unity.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/MartinJanev/tetris-project'">GitHub</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/ems.jpg" alt="Tetris Project" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Event Management System</h2>
-                    <p>This project is project for the subject <a href="https://www.finki.ukim.mk/subject/F23L1S146" id="webDesign">Fundamentals of Web Design</a>. The project is about a system to create and manage events, with user management. Also, it includes a RSVP functionality.<br> Technologies used: Angular and Firebase</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/MartinJanev/event-management-system'">GitHub</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
-                    </div>
-                </div>
-            </div>
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
-                    </div>
-                </div>                
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
-                    </div>
-                </div>                
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/working.png" alt="Tetris Project" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolore ad itaque quos cum, delectus molestias deleniti dolor, aspernatur fuga ipsam consectetur. Ullam velit dolorem doloribus odio nam!</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='./#home'">Lorem Ipsum</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="hobbies">
-        <h1 class="title">Hobbies</h1>
         <div class="about-containers">
-            <div class="details-container">
-                <img src="./assets/scout.png" alt="Scouting" class="icon">
-                <h3>Scouting</h3>
-                <p>I've been a scout for over five years and highly recommend it as a valuable experience. Joining Boy Scouts teaches leadership, teamwork, and outdoor survival, fostering personal growth and self-reliance. Scouting builds responsibility, confidence, and resilience, preparing individuals for life's challenges.</p>
-                <p>Check out the Scout Association's website <a href="https://izvidnici.mk/" id="izvidnik">HERE</a></p>
-            </div>
-            <div class="details-container">
-                <img src="./assets/ball.png" alt="Experience" class="icon">
-                <h3>Sports</h3>
-                <p>Sports are vital for physical and mental well-being, improving cardiovascular health, strength, endurance, and overall fitness. I`ve played tennis professionaly for 10 years, but still find time to play some basketball, ping pong, football,...</p>
-                <p>Recently I started preparing for the <a href="http://skopskimaraton.com.mk/" id="marathon">Wizz Air Skopje Half-Marathon</a> in October which is a goal from my bucket list, that I would want to achieve.</p>
-            </div>
-            <div class="details-container">
-                <img src="./assets/student.png" alt="Experience" class="icon">
-                <h3>Student organizations</h3>
-                <p>Student organizations help students develop leadership skills, build networks, and gain practical experience beyond the classroom. Joining these groups enhances resumes, expands knowledge, and creates lasting friendships. My experience with EESTEC LC Skopje taught me valuable soft skills, hard skills, and communication skills, including negotiating with companies.</p>
-                <p>Check out their website: <a id="eestec" href="https://eestec.mk">HERE</a></p>
-            </div>
-            <div class="details-container">
-                <img src="./assets/book.png" alt="Experience" class="icon">
-                <h3>Books</h3>
-                <p>Reading books is crucial because it expands our knowledge, sharpens our critical thinking, and enhances our empathy by exposing us to diverse perspectives. By immersing myself in literature, I not only acquire new information but also develop a deeper understanding of the world and the people around me. This daily practice of reading is one of the key resources I use to become a better person, continuously learning and growing in both intellect and character.</p>
-                <p></p>
-            </div>
+          <div class="details-container">
+            <img src="./assets/mission.png" alt="Mission" class="icon" />
+            <h3>Mission</h3>
+            <p>To make the world a better place</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education" class="icon" />
+            <h3>Education</h3>
+            <p>2nd year on Bachelor's Degree in CS</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/active.png" alt="Activities" class="icon" />
+            <h3>Favourite Activities</h3>
+            <p>Running and Scouting</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="books">
-        <h1 class="title">Books</h1>
-        <div class="about-containers">
-            <div class="details-container">
-                <h2 class="section__text__p2">Book I am reading right now</h2>
-                <img src="assets/algo.jpg" class="book-img">
-                <button href="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299" class="btn btn-color-1">Amazon Link</button>
-            </div>
-            <div class="section__text__p1">
-                <blockquote cite="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299">
-                    <h3>Introduction to Algorithms, Fourth Edition</h3>
-                    <p>A comprehensive update of the leading algorithms text, with new material on matchings in bipartite graphs, online algorithms, machine learning, and other topics.<br><br>
-                        Some books on algorithms are rigorous but incomplete; others cover masses of material but lack rigor. Introduction to Algorithms uniquely combines rigor and comprehensiveness. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers, with self-contained chapters and algorithms in pseudocode. Since the publication of the first edition, Introduction to Algorithms has become the leading algorithms text in universities worldwide as well as the standard reference for professionals. This fourth edition has been updated throughout. <br><br>
-                        Personally, this is the book for surviving the Algorithms and Data Structures class I will take on next semester.
-                    </p>
-                </blockquote>
-            </div>
-        </div>
-    </section>
+  <!-- Experience Section -->
+  <section id="experience">
+    <h1 class="title">Experience</h1>
+    <div id="experience-container" class="experience-details-container"></div>
+  </section>
 
-    <section class="contact" id="contact">
-        <div>
-            <h1 class="title">Contact <span>Me!</span></h1>
-    
-            <form class="contact-info-container">
-            <div class="input-box">
-                <input type="text" id="Name" placeholder="Full Name">
-                <input type="email" id="Email" placeholder="Email Address">
-            </div>
-                <textarea name="" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn-color-1 submit" onclick="topFunction()">Send Message</button>
-            </form>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h1 class="title">Projects</h1>
+    <div id="projects-container" class="experience-details-container"></div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies">
+    <h1 class="title">Hobbies</h1>
+    <div id="hobbies-container" class="about-containers"></div>
+  </section>
+
+  <!-- Books Section -->
+  <section id="books">
+    <h1 class="title">Books</h1>
+    <div id="books-container" class="about-containers"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div>
+      <h1 class="title">Contact <span>Me!</span></h1>
+      <form class="contact-info-container">
+        <div class="input-box">
+          <input type="text" id="Name" placeholder="Full Name" />
+          <input type="email" id="Email" placeholder="Email Address" />
         </div>
-    </section>
-    
-    <footer class="footer">
-        <div class="footerText">
-            <p>Copyright &#169; 2024 Martin Janev<p>        
-        </div>
-        <div class="footer-iconTop">
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
-        </div>
-      </footer>
-    <script src="script.js"></script>
+        <textarea id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn-color-1 submit" onclick="topFunction()">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footerText">
+      <p id="footer-copy"></p>
+    </div>
+    <div class="footer-iconTop">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
